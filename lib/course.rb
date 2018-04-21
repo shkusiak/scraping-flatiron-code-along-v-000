@@ -9,7 +9,7 @@ class Course
   end
 
   def self.all
-    @@all << title
+    @@all << @title
     @@all
   end
   def self.reset_all

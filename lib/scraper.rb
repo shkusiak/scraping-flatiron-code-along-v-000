@@ -19,6 +19,7 @@ class Scraper
     self.get_courses.each do |post|
       course = Course.new
       course.title = post.css("h2").text
+    end
   end
 
   def print_courses

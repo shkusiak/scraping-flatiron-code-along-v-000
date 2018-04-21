@@ -6,10 +6,10 @@ class Course
     @title = title
     @schedule = schedule
     @description = description
+    @@all << self
   end
 
   def self.all
-    @@all << @title
     @@all
   end
   def self.reset_all

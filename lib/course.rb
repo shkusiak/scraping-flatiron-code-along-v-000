@@ -9,6 +9,7 @@ class Course
   end
 
   def self.all
+    @@all << self
     @@all
   end
 
